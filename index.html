@@ -380,7 +380,7 @@
 </div>
 
 <!-- সাউন্ড অন/অফ বাটন -->
-<button id="soundToggle" class="sound-toggle" aria-label="সাউন্ড চালু/বন্ধ">🔊</button>
+<button id="soundToggle" class="sound-toggle" aria-label="সাউন্ড চালু/বন্ধ">1</button>
 
 <!-- এখানে তোমার ওয়েবসাইটের বাকি সব কন্টেন্ট লিখবে -->
 <div class="content">
@@ -432,7 +432,7 @@
   soundOverlay.addEventListener('click', () => {
     video.muted = false;
     video.play();
-    soundBtn.textContent = '🔊';
+    soundBtn.textContent = '';
     soundOverlay.style.display = 'none';
   });
 
@@ -441,10 +441,10 @@
     if (video.muted) {
       video.muted = false;
       video.play();
-      soundBtn.textContent = '🔊';
+      soundBtn.textContent = '';
     } else {
       video.muted = true;
-      soundBtn.textContent = '🔇';
+      soundBtn.textContent = '';
     }
   });
 
